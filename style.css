@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(black, grey, black);
+    place-items: center;
+}
+
+.card {
+    margin-top: 50px;
+    width: 400px;
+    height: 600px;
+    background-image: url("https://wallpapers.com/images/hd/black-nike-zoo4u0z1mgqgind4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.incard {
+    background-color: rgba(128, 128, 128, 0.635);
+    width: 350px;
+    height: 550px;
+    border-radius: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    text-align: center;
+}
+
+img {
+    width: 250px;
+    transition: 1s;
+    height: 250px;
+}
+
+h3,
+h1 {
+    color: white;
+}
+
+
+
+.child {
+    width: 20px;
+    height: 20px;
+    border: solid white;
+    border-radius: 50%;
+}
+
+.colors {
+    margin-left: 25px;
+    gap: 15px;
+    display: flex;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.white {
+    background-color: white;
+}
+
+.grey {
+    background-color: grey;
+}
+
+h1,
+h3,
+.child,
+button {
+    margin-top: 25px;
+}
+
+button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 15px;
+}
+
+.inabout {
+    transition: 1s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+h1 {
+    transform: translateY(50px);
+    transition: 1s;
+    font-size: 45px;
+}
+
+.card:hover .inabout {
+    opacity: 1;
+    transform: translateY(-50px);
+    transition: 1s;
+}
+
+.card:hover h1 {
+    transform: translateY(-50px);
+    transition: 1s;
+}
+
+.card:hover img {
+    transform: translateY(-100px) rotate(-30deg) scale(1.7);
+    transition: 1s;
+}
+
+.card:hover .incard {
+    width: 400px;
+    height: 600px;
+    transition: 1s;
+}
